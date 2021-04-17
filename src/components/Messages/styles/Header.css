@@ -1,0 +1,20 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+header{
+    border-bottom:0.5px solid hsl(226deg 12% 58%);
+    display: flex;
+    justify-content: space-between;
+}
+.seach_message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+
+}
+h2{
+    color: hsl(225deg 27% 31%);
+    margin-left: 5vw;
+}

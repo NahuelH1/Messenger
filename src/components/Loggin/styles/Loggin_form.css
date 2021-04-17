@@ -1,0 +1,42 @@
+
+.Loggin_form{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+
+  
+}
+.Loggin_containter{
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.Loggin{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(44,54,158);
+    font-family: 'Overpass Mono', monospace;
+background: linear-gradient(180deg, rgba(44,54,158,0.5158438375350141) 18%, rgba(73,177,227,1) 46%);
+}
+
+.form_text{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Overpass Mono', monospace;
+    
+}
+.form_forgot{
+    text-align: right;
+}
+.form_text:focus{
+    outline: none;
+    
+}
+
+label{
+    margin: 10px 0px;
+}

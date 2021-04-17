@@ -1,0 +1,54 @@
+
+.chat{
+    display: flex;
+    height: 50px;
+    border: 0.5px solid hsl(226deg 12% 58%);
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+    justify-self: center;
+}
+.chat:hover{
+  background-color: rgb(202, 202, 202,0.5);
+  cursor: pointer;
+}
+.chat__photo{
+    border-radius: 200%;
+    margin-right: 10px;
+}
+.chat__text h5, .chat__text p,.chat__text2 div, .chat__text2 p  {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.chat__name{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(225deg 27% 31%);
+
+}
+.chat__text{
+    margin-right: 10px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chat__lastMessage{
+    color: hsl(226deg 12% 58%);
+}
+.chat__timeLastMessage{
+    font-size: small;
+    color: hsl(226deg 12% 58%);
+}
+.chat__countMessages{
+    background-color: hsl(226deg 87% 65%);
+    text-align: center;
+    border-radius: 5px;
+    width: 30px;
+}
+.chat__text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}

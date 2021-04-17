@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.5px solid hsl(226deg 12% 58%);
+}
+
+.logo{
+    padding: 2vw 10vw;
+}
+.logo:hover{
+    background-color: rgb(202, 202, 202,0.5);
+}
