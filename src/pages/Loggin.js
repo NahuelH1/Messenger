@@ -1,8 +1,10 @@
 import react from 'react';
-import {FomLogController} from '../components/FomLogController';
+import Cookie from 'universal-cookie'
+import LogginForm from '../components/Loggin/Loggin_Form';
+import {Redirect} from 'react-router-dom'
 
 const URL_LOGIN = 'http://localhost:3000/login';
-
+const cookies = new Cookie();
 class Loggin extends react.Component
 {
 constructor(props)
@@ -12,7 +14,8 @@ constructor(props)
     form:{
           email: undefined,
           password: undefined,
-         }
+         },
+         redirect_loged: false
   };
 }
 
@@ -31,9 +34,21 @@ constructor(props)
        'Content-Type': 'application/json'
      }
     }).then(res=>res.json())
-      .then(data => console.log(data))
+      .then(data => {
+        cookies.set('KEY', data.body, {path:'/loged'})
+        cookies.set('ID', data.body.id, {path: '/loged'})
+        this.setState({
+                   ...this.state,
+                    redirect_loged:true
+                   })
+        console.log(data.body)
+      }
+      )
        .catch(e=>{console.log(e)})
-  };
+ };
+
+
+
 
   handleChange = e => {
     this.setState({
@@ -41,12 +56,21 @@ constructor(props)
      ...this.state.form,
       [e.target.name]: e.target.value,
      } 
-    }, (err, data)=>{console.log(this.state)})
+    }, ()=>{console.log(this.state)})
   }
 
-  render(){
-    return <FomLogController handleChange={this.handleChange} handleClick={this.handleClick} handleSubmit={this.handleSubmit}/>
-  }
+ render(){
+   return(
+     <react.Fragment> 
+      { this.state.redirect_loged && <Redirect to="/loged/chatlist" />} 
+        <LogginForm 
+        handleChange = {this.handleChange}
+        handleSubmit = {this.handleSubmit}
+        handleClick = {this.handleClick}
+        />
+     </react.Fragment>
+   )
+ }
 }
 
 export default Loggin;

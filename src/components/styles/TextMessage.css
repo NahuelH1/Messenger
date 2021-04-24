@@ -1,0 +1,36 @@
+.Message{
+    display: flex;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 0.5px solid hsl(226deg 12% 58%);
+    max-width: 80vw;
+    word-break: break-word;
+    width: fit-content; 
+}
+
+.Message p{
+    margin: 0;
+    padding: 0;
+}
+
+.He{
+ 
+
+    border: 0.5px solid hsl(226deg 12% 58%);
+    margin-left: 10px;
+    background-color: rgb(91, 140, 206); 
+}
+
+.I{
+    background-color: rgb(5, 105, 144); 
+    color: white;
+    align-self: flex-end;
+    margin-right: 10px;
+    max-width: 80%;
+
+}
+
+body{
+    background: linear-gradient(180deg, rgba(44,54,158,0.5158438375350141) 18%, rgba(73,177,227,1) 46%);
+}

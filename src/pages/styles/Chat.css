@@ -1,0 +1,32 @@
+.messages__container{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.messages__container{
+    height: 100%;
+}
+.input__container input, .input__container button{
+    height: 50px;
+    padding: 0px;
+    border: 0px;
+}
+.input__container input{
+    width: 90%;
+}
+.input__container {
+    display: flex;
+    justify-content:space-around;
+}
+
+.input_btn{
+ width: 30vw;
+}

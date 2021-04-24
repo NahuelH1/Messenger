@@ -7,9 +7,11 @@
   
 }
 .Loggin_containter{
-    height: 70vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 .Loggin{
     height: 100vh;

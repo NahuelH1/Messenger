@@ -23,6 +23,7 @@ function Register(prop)
         </form>
          <p>Log In</p>
        </div> 
+       
     </div>
    )
 }

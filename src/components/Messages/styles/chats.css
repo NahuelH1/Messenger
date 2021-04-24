@@ -1,6 +1,0 @@
-.chats{
-    display: grid;
-    grid-auto-rows: 80px;
-    align-items: center;
-    overflow-y: scroll;
-}

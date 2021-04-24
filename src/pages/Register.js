@@ -45,6 +45,7 @@ class Register extends react.Component
                ...this.state,
                ModalWarningVisible : true,
                }
+
             );
         }
       )
@@ -65,7 +66,7 @@ class Register extends react.Component
      ...this.state.form,
       [e.target.name]: e.target.value,
      } 
-    }, ()=>{console.log(this.state)})
+    })
   }
 
   render(){

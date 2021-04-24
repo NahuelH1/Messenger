@@ -1,0 +1,29 @@
+
+.user{
+    display: flex;
+    height: 50px;
+    border-bottom: 0.5px solid black;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    width: 80%;
+    padding: 10px;
+    justify-self: center;
+    justify-content: left;
+    align-items: center;
+}
+.user:hover{
+  background-color: rgb(202, 202, 202,0.5);
+  cursor: pointer;
+}
+.user__photo{
+    border-radius: 200%;
+    margin-right: 10px;
+}
+
+.user__name{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+
+}

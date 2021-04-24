@@ -17,7 +17,7 @@ function Loggin_Form(prop)
           <input className="form_text" onChange={prop.handleChange} type="password" name="password"/>
   
           <p className="form_forgot">Forgot Password?</p>
-          <input type="submit" value="Loggin" onClick={prop.handleClick}/>
+          <input type="submit" value="Login" onClick={prop.handleClick}/>
         </form>
          <p>Create Account</p>
        </div> 

@@ -1,16 +1,21 @@
 import react from 'react'
 import './styles/Layout.css'
-import Header from './Messages/Header'
-import Footer from './Messages/Footer'
-function Layout(props)
+import Header from './Header'
+import Footer from './Footer'
+
+
+const Layout = (prop)=>
 {
-   return(
-       <div class="Layout">
-         <Header/>
-          {props.children}
-          <Footer/>
-       </div>
-   )
+      return(
+         <div class="Layout">
+           <Header>
+              {prop.title}
+           </Header>
+            {prop.children}
+            <Footer/>
+         </div>
+     )
+   
 }
 
 export default Layout
